@@ -1,5 +1,5 @@
-from flask import
-Flask,render_template,request
+from flask import Flask
+Flask,render_templates,request
 app=Flask(__name__)
 @app.route('/')
 def hello():
@@ -25,5 +25,5 @@ def cal(num1, num2, operation):
     elif operation == 'division':
         return num1 / num2
 
-if _name_ == '_main_':
+if__name__== '_main_':
     app.run()
